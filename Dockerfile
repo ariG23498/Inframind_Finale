@@ -11,4 +11,4 @@ COPY . /app
 
 CMD ["python","app.py"]
 
-EXPOSE 8000
+EXPOSE 5000
