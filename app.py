@@ -9,10 +9,10 @@ def my_form():
 @app.route('/', methods=['POST'])
 def my_form_post():
     text = request.form['text']
-    f = open("storage.txt","a")
-    f.write(text+"\n")
+    f = open('storage.txt,'a')
+    f.write(text+'\n')
     f.close()
-    f = open("storage.txt","r")
+    f = open('storage.txt','r')
     contents = f.read()
     f.close()    
     #print(contents)
